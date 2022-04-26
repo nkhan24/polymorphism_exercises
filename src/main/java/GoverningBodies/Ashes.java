@@ -1,8 +1,10 @@
-package games;
+package GoverningBodies;
+
+import GoverningBodies.ICC;
 
 import java.util.ArrayList;
 
-public class Ashes extends Games{
+public class Ashes extends ICC {
     public Ashes(String sport, int age, boolean progress) {
         super(sport, age, progress);
     }
@@ -13,3 +15,7 @@ public class Ashes extends Games{
         teams.add("Australia");
     }
 }
+
+//Stats: highest runs
+//Most wins in history
+//Stats as interface

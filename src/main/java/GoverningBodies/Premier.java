@@ -1,12 +1,35 @@
-package games;
+package GoverningBodies;
+
+import GoverningBodies.FA;
+import teams.Chelsea;
+import teams.Liverpool;
+import teams.ManCity;
+import teams.ManUnited;
 
 import java.util.HashMap;
 
-public class Premier extends Games{
+public class Premier extends FA {
     public int prem;
 
     public Premier(String sport, int age, boolean progress) {
-        super(sport, age, progress);
+        super(sport,age, progress);
+    }
+
+    public void addTeam(Chelsea chelsea){
+        this.premierHashMap.put(chelsea, chelsea);
+        //this.premierArrayList.add(chelsea);
+    }
+    public void addTeam(ManCity manCity){
+        this.premierHashMap.put(manCity, manCity);
+        //this.premierArrayList.add(chelsea);
+    }
+    public void addTeam(Liverpool liverpool){
+        this.premierHashMap.put(liverpool, liverpool);
+        //this.premierArrayList.add(chelsea);
+    }
+    public void addTeam(ManUnited manUnited){
+        this.premierHashMap.put(manUnited, manUnited);
+        //this.premierArrayList.add(chelsea);
     }
 
     public int getPrem() {
@@ -34,3 +57,8 @@ public class Premier extends Games{
         return (1);
     }
 }
+
+
+//FA cup
+//relegation 3 spots
+//return team name "","","",""

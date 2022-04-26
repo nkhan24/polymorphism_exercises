@@ -2,7 +2,7 @@ package games;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import games.Formula;
+import GoverningBodies.Formula;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -11,7 +11,7 @@ public class FormulaTest {
 
     @BeforeEach
     void setup(){
-        formula = new Formula("F1", 72, true);
+        formula = new Formula("F1", 72, true,"Motorsport","FIA");
     }
 
     @Test

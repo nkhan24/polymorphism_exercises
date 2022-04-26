@@ -2,7 +2,7 @@ package games;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import games.Premier;
+import GoverningBodies.Premier;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

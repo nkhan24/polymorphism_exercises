@@ -1,11 +1,13 @@
-package games;
+package GoverningBodies;
+
+import GoverningBodies.FIA;
 
 import java.util.HashMap;
 
-public class Formula extends Games {
+public class Formula extends FIA {
 
-    public Formula(String sport, int age, boolean progress) {
-        super(sport, age, progress);
+    public Formula(String sport, int age, boolean progress, String type, String body) {
+        super(sport,age, progress, type, body);
     }
 
     public int teams() {
@@ -23,7 +25,8 @@ public class Formula extends Games {
         return (2);
     }
 }
-
+//races - interface
+//Location UK, Monaco, USA, Bahrain
 
 
 
